@@ -1,11 +1,5 @@
 import pickle
-import streamlit as st
-
-import pickle
-
-pickle.dump(open(file_path, "wb"))
-# dumps : return the object in bytes
-data = pickle.dump(obj)
+import streamlit as s
 
 pickle_in = open('model.pkl', 'rb')
 classifier = pickle.load(pickle_in)
