@@ -4,6 +4,9 @@ import streamlit as st
 classifier = pickle.load(open('model.pkl', 'rb'))
 
 
+
+
+
 st.title("Projeto de classificação Squad Docker")
 
 @st.cache()

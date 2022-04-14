@@ -1,8 +1,12 @@
 import pickle
 import streamlit as st
 
-classifier = pickle.load(open('model.pkl', 'rb'))
+pickle_in = pickle.load(open('model.pkl', 'rb'))
 
+
+
+pickle_in = open('model.pkl', 'rb')
+classifier = pickle.load(pickle_in)
 
 st.title("Projeto de classificação Squad Docker")
 

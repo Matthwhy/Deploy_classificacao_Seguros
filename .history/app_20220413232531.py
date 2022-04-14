@@ -1,8 +1,14 @@
 import pickle
 import streamlit as st
 
-classifier = pickle.load(open('model.pkl', 'rb'))
+load_clf = pickle.load(open('penguins_clf.pkl', 'rb'))
 
+# Apply model to make predictions
+prediction = load_clf.predict(df)
+prediction_proba = load_clf.predict_proba(df)
+
+pickle_in = open('model.pkl', 'rb')
+classifier = pickle.load(pickle_in)
 
 st.title("Projeto de classificação Squad Docker")
 
