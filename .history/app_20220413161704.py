@@ -3,6 +3,10 @@ import streamlit as st
 
 import pickle
 
+pickle.dump(open(mode, "wb"))
+# dumps : return the object in bytes
+data = pickle.dump(obj)
+
 pickle_in = open('model.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 

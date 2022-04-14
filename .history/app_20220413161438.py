@@ -1,8 +1,13 @@
 import pickle
 import streamlit as st
 
-import pickle
 
+# loading the trained model
+
+import pickle
+data = pickle.load(open(file_path, "rb"))
+# loads : get the data from var
+data = pickle.load(var)
 pickle_in = open('model.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 

@@ -2,6 +2,7 @@ import pickle
 import streamlit as st
 
 import pickle
+j)
 
 pickle_in = open('model.pkl', 'rb')
 classifier = pickle.load(pickle_in)
